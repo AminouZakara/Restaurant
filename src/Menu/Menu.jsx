@@ -3,6 +3,8 @@ import { Link, Route, Routes } from 'react-router-dom'
 import '../App.css'
 import Breakfast from './Breakfast'
 import { breakfastMenu } from './Menu Data/Breakfast'
+import Lunch from './Lunch'
+import { lunchMenu } from './Menu Data/Lunch'
 
 const Menu = () => {
   return (<div className="menu">
@@ -13,7 +15,9 @@ const Menu = () => {
         <ul><li><Link to={'diner'} className='menuLinks'>Diner</Link></li></ul>
     </nav>
     <Routes>
-        <Route path='breakfast' element={breakfastMenu.map((bMenu)=>
+        <Route path='breakfast' element={<div className='breakfast-Wrapper' > 
+
+          {breakfastMenu.map((bMenu)=>
             
             <Breakfast 
             id = {bMenu.id}
@@ -23,8 +27,21 @@ const Menu = () => {
             
             />
             
-            )}></Route>
-        <Route path='lunch' element={<h4>this is the lunch page</h4>}></Route>
+            )}
+        </div>}></Route>
+        <Route path='lunch' element={<div className='lunch-Wrapper'>
+
+          {lunchMenu.map((lMenu) =>
+            <Lunch 
+            
+              id = {lMenu.id}
+              img = {lMenu.img}
+              lName = {lMenu.lName}
+              lDesc = {lMenu.lDesc}
+            
+            />
+          )}
+        </div>}></Route>
         <Route path='diner' element={<h4>this is the diner page</h4>}></Route>
     </Routes>
     <div>Menu</div>

@@ -2,8 +2,6 @@ import React from 'react'
 import "./App.css"
 import {Link, Route, Routes } from 'react-router-dom'
 import Menu from './Menu/Menu'
-import { breakfastMenu } from './Menu/Menu Data/Breakfast'
-import Breakfast from './Menu/Breakfast'
 
 const App = () => {
   return (

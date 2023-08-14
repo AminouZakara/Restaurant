@@ -53,9 +53,7 @@ ul{
   display: flex;
 
 }
-.menu nav ul{
 
-}
 .menu nav li{
   background-color: orange;
   padding: 5px;
@@ -78,15 +76,40 @@ ul{
   font-size: large;
 }
 
-.Breakfast{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-}
 .breakfast{
   background-color: rgb(44, 44, 129);
-  
-  
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+
   
 }
+.breakfast-Wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  gap: 10px;
+  overflow: auto;
+  overflow: hidden;
+  justify-content: center;
+  
+}
+.lunch-Wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  gap: 20px;
+  justify-content: center;
+}
 
+.lunch-Menu img{
+  max-height: 300px;
+  width: 100%;
+}
+.lunch-Menu .details{
+  padding: 15px;
+}
+.lName{
+padding-bottom: 10px;
+}
+.id{
+  padding-left: 5px;
+}
