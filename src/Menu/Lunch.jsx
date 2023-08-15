@@ -1,6 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
+
+const pStyle = {
+  WebkitLineClamp: 5,
+  webkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  display: '-webkit-box'
+}
 
 const Lunch = (props) => {
+
+const [isOpen , setIsOpen] = useState(false)
+
+
   return (<div>
     <div>Lunch</div>
     <div className="lunch-container">
@@ -15,7 +27,12 @@ const Lunch = (props) => {
             
           </div>
           <div className="lDesc">
-            <p>{props.lDesc}</p>
+            <p style={isOpen ? null : pStyle}>{props.lDesc}</p>
+
+            <div className="readMoreBtn">
+              <button onClick={()=> setIsOpen(!isOpen) }>
+                {isOpen ? 'Read Less' : 'Read More' }</button>
+            </div>
 
           </div>
         </div>
