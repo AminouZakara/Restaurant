@@ -56,21 +56,25 @@ ul{
   padding: 5px;
   border-right: 20px solid orange;
   border-radius: 20px;
+  padding-top: 20px;
+
 
 
 }
 .menuLinks{
   text-decoration: none;
   background-color: green;
-  padding: 2px;
+  padding: 5px 10px;
+  margin: 10px;
   color: orange;
   border-radius: 5px;
+  font-size: 20px;
 
 
 }
 .menuLinks:hover{
   color: white;
-  font-size: large;
+  font-size: 25px;
 }
 
 .breakfast{
@@ -99,12 +103,8 @@ ul{
   padding: 30px;
 }
 
-.lunch-Wrapper:hover{
 
-}
-
-
-.lunch-container{
+.lunch-container, .breakfast-container{
   background-color: green;
   color: white;
   padding: 0px 10px;
@@ -112,30 +112,18 @@ ul{
   border-radius: 10px;
 
 }
-.lunch-container:hover{
-  transform: scale(1.2);
 
-  
-
-}
-.lunch-Menu{
-  
-
-}
-.lunch-Menu:hover{
-  
-}
-
-.lunch-Menu img{
+.lunch-Menu img, .breakfast-Menu img{
   height: 200px;
   width: 300px;
 }
-.lunch-Menu .details{
+.lunch-Menu .details, .breakfast-Menu .details{
   padding: 15px;
 }
-.lName{
-padding-bottom: 10px;
+.lName, .bName, .bDesc p, .lDesc p{
+margin-bottom: 10px;
 }
 .id{
   padding-left: 5px;
 }
+

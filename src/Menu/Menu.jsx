@@ -21,6 +21,7 @@ const Menu = () => {
             
             <Breakfast 
             id = {bMenu.id}
+            img = {bMenu.img}
             bName = {bMenu.bName}
             bDesc = {bMenu.bDesc}
             bPrice ={bMenu.bPrice}

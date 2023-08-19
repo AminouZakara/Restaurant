@@ -14,7 +14,6 @@ const [isOpen , setIsOpen] = useState(false)
 
 
   return (<div>
-    <div>Lunch</div>
     <div className="lunch-container">
       <div className="lunch-Menu">
         <div className="id">
