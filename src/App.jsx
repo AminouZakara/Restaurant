@@ -2,6 +2,7 @@ import React from 'react'
 import "./App.css"
 import {Link, Route, Routes } from 'react-router-dom'
 import Menu from './Menu/Menu'
+import Home from './Home'
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         </ul>
       </nav>
       <Routes>
-        <Route path='/' element={<h3>This is Home</h3>}></Route>
+        <Route path='/' element={<Home />}></Route>
         <Route path='menu/*' element={<Menu />}></Route>
         <Route path='contact' element={<h3>This is the Contact Page</h3>}></Route>
       </Routes>

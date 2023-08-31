@@ -34,9 +34,17 @@ ul{
 }
 .home{
   background-color: white;
+  color: black;
+  padding: 1rem;
+
+
+}
+.home-container{
+  background-color: orange;
+  padding: 1rem;
 }
 .home img{
-  width: 400px;
+  width: 400px; 
   height: auto;
 }
 .menu{
