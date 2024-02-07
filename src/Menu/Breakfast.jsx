@@ -8,7 +8,7 @@ const pStyle = {
   display: '-webkit-box'
 }
 const Breakfast = (props) => {
-  const [isOpen , setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
 
   return (<div>
@@ -21,14 +21,14 @@ const Breakfast = (props) => {
         <div className="details">
           <div className="bName">
             <h2>{props.bName}</h2>
-            
+
           </div>
           <div className="bDesc">
             <p style={isOpen ? null : pStyle}>{props.bDesc}</p>
 
             <div className="readMoreBtn">
-              <button onClick={()=> setIsOpen(!isOpen) }>
-                {isOpen ? 'Read Less' : 'Read More' }</button>
+              <button onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? 'Read Less' : 'Read More'}</button>
             </div>
 
           </div>

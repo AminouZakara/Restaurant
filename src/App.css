@@ -1,59 +1,80 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-body{
+body {
   background-color: rgb(2, 77, 2);
   color: white;
-  padding: 5rem;
+  padding: 1rem;
+
 }
 
-nav{
+nav {
   display: flex;
+  justify-items: center;
   justify-content: center;
-  
+  padding-bottom: 1rem;
+
+
 }
-ul{
+
+ul {
   display: flex;
 }
-.App li{
+
+.App-container {
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  height: 35rem;
+}
+
+.App li {
   list-style-type: none;
   padding-right: 20px;
   padding: 5px 10px;
   background-color: green;
-  border-right: 10px solid  rgb(2, 77, 2);
+  border-right: 10px solid rgb(2, 77, 2);
 }
-.appLinks{
+
+.appLinks {
   text-decoration: none;
   font-size: 20px;
   color: white;
-  
+
 
 }
-.home{
+
+.home {
   background-color: white;
+
 }
-.home img{
+
+.home img {
   width: 400px;
   height: auto;
 }
-.menu{
+
+.menu {
   background-color: white;
   padding: 1rem;
- 
+  color: black;
+  height: 35rem;
+
 
 }
-.menu nav{
+
+.menu nav {
   background-color: orange;
   display: flex;
 
 }
 
-.menu nav li{
+.menu nav li {
   background-color: orange;
-  padding: 5px;
+  padding: 2px;
   border-right: 20px solid orange;
   border-radius: 20px;
   padding-top: 20px;
@@ -61,7 +82,8 @@ ul{
 
 
 }
-.menuLinks{
+
+.menuLinks {
   text-decoration: none;
   background-color: green;
   padding: 5px 10px;
@@ -72,29 +94,38 @@ ul{
 
 
 }
-.menuLinks:hover{
+
+.menu-container {
+  background-image: url("src/Menu/images/bg.jpg");
+
+}
+
+.menuLinks:hover {
   color: white;
   font-size: 25px;
 }
 
-.breakfast{
+.breakfast {
   background-color: rgb(44, 44, 129);
   display: flex;
   justify-content: center;
   border-radius: 0.5rem;
 
-  
+
 }
-.breakfast-Wrapper{
+
+.breakfast-Wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 10rem);
   gap: 10px;
   overflow: auto;
   overflow: hidden;
   justify-content: center;
-  
+
 }
-.lunch-Wrapper, .breakfast-Wrapper{
+
+.lunch-Wrapper,
+.breakfast-Wrapper {
   background-color: orange;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
@@ -104,7 +135,8 @@ ul{
 }
 
 
-.lunch-container, .breakfast-container{
+.lunch-container,
+.breakfast-container {
   background-color: green;
   color: white;
   padding: 0px 10px;
@@ -113,17 +145,50 @@ ul{
 
 }
 
-.lunch-Menu img, .breakfast-Menu img{
+.lunch-Menu img,
+.breakfast-Menu img {
   height: 200px;
   width: 300px;
 }
-.lunch-Menu .details, .breakfast-Menu .details{
+
+.lunch-Menu .details,
+.breakfast-Menu .details {
   padding: 15px;
 }
-.lName, .bName, .bDesc p, .lDesc p{
-margin-bottom: 10px;
+
+.lName,
+.bName,
+.bDesc p,
+.lDesc p {
+  margin-bottom: 10px;
 }
-.id{
+
+.id {
   padding-left: 5px;
 }
 
+/* Contact */
+
+.contact {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  height: 35rem;
+
+}
+
+.contact-container {
+  background-color: orange;
+  padding: 1rem;
+
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.Footer-content {
+  padding-bottom: 2rem;
+}
