@@ -2,11 +2,8 @@ import React from 'react'
 import "./App.css"
 import { Link, Route, Routes } from 'react-router-dom'
 import Menu from './Menu/Menu'
-<<<<<<< HEAD
 import Contact from './Contact'
-=======
 import Home from './Home'
->>>>>>> f613ccad8407b03855014b2ef5d9fb8d237be296
 
 const App = () => {
   return (
@@ -20,7 +17,6 @@ const App = () => {
         </ul>
       </nav>
       <Routes>
-<<<<<<< HEAD
         <Route path='/' element={
           <div className='App-container'>
             <br />
@@ -42,11 +38,9 @@ const App = () => {
           </div>
         }></Route>
         <Route path='contact' element={<Contact />}></Route>
-=======
         <Route path='/' element={<Home />}></Route>
         <Route path='menu/*' element={<Menu />}></Route>
         <Route path='contact' element={<h3>This is the Contact Page</h3>}></Route>
->>>>>>> f613ccad8407b03855014b2ef5d9fb8d237be296
       </Routes >
     </div >
 
