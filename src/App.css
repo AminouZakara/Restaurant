@@ -71,7 +71,7 @@ ul {
   background-color: white;
   padding: 1rem;
   color: black;
-  height: 35rem;
+  height: auto;
 }
 
 .menu nav {
@@ -191,12 +191,15 @@ ul {
 
 }
 
-.contact-footer {
+.contact-footer p {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
 }
 
-.Footer-content {
+.contact-footer {
   padding-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+
 }

@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
             <div className="contact-footer">
                 <div className="Footer-content">
-                    <p>copyright ® all right deserved to <i>Antalya African Restaurant </i></p>
+                    <p>copyright ® all right deserved to <span><i> Afro Restaurant </i></span> </p>
                 </div>
             </div>
         </div>
