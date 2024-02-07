@@ -49,12 +49,25 @@ ul {
 
 .home {
   background-color: white;
-
+  <<<<<<< HEAD
 }
 
 .home img {
   width: 400px;
-  height: auto;
+  =======color: black;
+  padding: 1rem;
+
+
+}
+
+.home-container {
+  background-color: orange;
+  padding: 1rem;
+}
+
+.home img {
+  width: 400px;
+  >>>>>>>f613ccad8407b03855014b2ef5d9fb8d237be296 height: auto;
 }
 
 .menu {
